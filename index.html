@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impresa Edile Mario · Impresa Edile Laurentiu · Trieste</title>
+    <link rel="stylesheet" href="css/style.css?v=10" />
+    <link rel="icon" href="assets/logo-mario.jpg" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/logo-mario.jpg" alt="Impresa Edile Mario" />
+        <span class="plus">+</span>
+        <img src="assets/logo-laurentiu.jpg" alt="Impresa Edile Laurentiu" />
+      </div>
+      <nav class="tabs" aria-label="Sezioni">
+        <button type="button" data-tab="home" aria-selected="true">Home</button>
+        <button type="button" data-tab="servizi">Servizi</button>
+        <button type="button" data-tab="chi-siamo">Chi siamo</button>
+        <button type="button" data-tab="galleria">Galleria</button>
+        <button type="button" data-tab="collabora">Diventa collaboratore</button>
+        <button type="button" data-tab="contatti">Contatti</button>
+        <button type="button" class="login-btn" id="open-login">Area admin</button>
+        <button type="button" class="login-btn" id="logout" style="display: none">Esci</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel active" id="home">
+        <div class="hero-banner">
+          <div class="hero-slides">
+            <img class="on" src="assets/bg-cantiere.jpg" alt="" />
+            <img src="assets/bg-interno.jpg" alt="" />
+            <img src="assets/bg-bagno.jpg" alt="" />
+            <img src="assets/bg-facciata.jpg" alt="" />
+            <img src="assets/bg-posa.jpg" alt="" />
+          </div>
+          <div class="hero-overlay">
+            <div class="hero-logos">
+              <img src="assets/logo-mario.jpg" alt="Impresa Edile Mario" />
+              <img src="assets/logo-laurentiu.jpg" alt="Impresa Edile Laurentiu" />
+            </div>
+            <p class="kicker" id="home-kicker">Trieste · Edilizia</p>
+            <h1 id="home-title">Due imprese. Un solo standard di lavoro.</h1>
+            <p id="home-text">
+              Impresa Edile Mario e Impresa Edile Laurentiu collaborano su ristrutturazioni,
+              costruzioni e finiture a Trieste e provincia. Cantieri organizzati, preventivi chiari,
+              lavori eseguiti a regola d’arte.
+            </p>
+            <div>
+              <a class="btn" href="#galleria" data-go="galleria">Vedi i lavori</a>
+              <a class="btn ghost" href="#collabora" data-go="collabora">Lavora con noi</a>
+            </div>
+          </div>
+        </div>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <img src="assets/bg-cantiere.jpg" alt="" />
+            <img src="assets/bg-interno.jpg" alt="" />
+            <img src="assets/bg-bagno.jpg" alt="" />
+            <img src="assets/bg-facciata.jpg" alt="" />
+            <img src="assets/bg-posa.jpg" alt="" />
+            <img src="assets/bg-cantiere.jpg" alt="" />
+            <img src="assets/bg-interno.jpg" alt="" />
+            <img src="assets/bg-bagno.jpg" alt="" />
+            <img src="assets/bg-facciata.jpg" alt="" />
+            <img src="assets/bg-posa.jpg" alt="" />
+          </div>
+        </div>
+        <div class="grid-3" style="margin-top: 22px">
+          <article class="card">
+            <h3 id="home-c1t">Ristrutturazioni</h3>
+            <p id="home-c1p">Interni, bagni, appartamenti e locali commerciali, dal cantiere al dettaglio.</p>
+          </article>
+          <article class="card">
+            <h3 id="home-c2t">Costruzioni</h3>
+            <p id="home-c2p">Murature, cartongesso, pavimenti, tinteggiature e opere edili complete.</p>
+          </article>
+          <article class="card">
+            <h3 id="home-c3t">Squadra sul posto</h3>
+            <p id="home-c3p">Due imprese di Trieste, pronte a coprire più cantieri senza perdere qualità.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="servizi">
+        <p class="kicker">Cosa facciamo</p>
+        <h1>Servizi edili</h1>
+        <div class="grid-3">
+          <article class="card"><h3>Demolizioni</h3><p>Rimozioni controllate, smaltimento macerie, preparazione del cantiere.</p></article>
+          <article class="card"><h3>Murature</h3><p>Tramezzi, aperture, chiusure vani e riprese di muratura esistente.</p></article>
+          <article class="card"><h3>Cartongesso</h3><p>Controsoffitti, pareti, velette e opere in lastre su orditura metallica.</p></article>
+          <article class="card"><h3>Pavimenti e rivestimenti</h3><p>Posa gres, battiscopa, massetti e impermeabilizzazioni bagno.</p></article>
+          <article class="card"><h3>Tinteggiature</h3><p>Preparazione superfici, pittura interni ed esterni, finiture.</p></article>
+          <article class="card"><h3>Impianti e posa</h3><p>Assistenza idraulica ed elettrica in cantiere, posa sanitari e infissi.</p></article>
+        </div>
+      </section>
+
+      <section class="panel" id="chi-siamo">
+        <p class="kicker">Collaborazione</p>
+        <h1>Chi siamo</h1>
+        <p>Due imprese individuali di Trieste. Stesso territorio, stessa cura del cantiere.</p>
+        <div class="grid-2">
+          <article class="card">
+            <img src="assets/logo-mario.jpg" alt="Impresa Edile Mario" style="height: 96px; object-fit: contain" />
+            <h2>Impresa Edile Mario</h2>
+            <p>
+              <strong>Ungureanu Samuel Marius</strong><br />
+              Viale D’Annunzio, 34139 Trieste (TS)<br />
+              P.IVA IT01416060323<br />
+              Ungureanusamuel14@gmail.com
+            </p>
+          </article>
+          <article class="card">
+            <img src="assets/logo-laurentiu.jpg" alt="Impresa Edile Laurentiu" style="height: 96px; object-fit: contain" />
+            <h2>Impresa Edile Laurentiu</h2>
+            <p>
+              <strong>Tudor Laurentiu</strong><br />
+              Via Giuseppe Lorenzo Gatteri 29, 34129 Trieste (TS)<br />
+              P.IVA IT01427890320<br />
+              C.F. TDRLNT82L11Z129T
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="galleria">
+        <p class="kicker">Cantieri</p>
+        <h1>Galleria lavori</h1>
+        <p>Foto dai cantieri di Impresa Edile Mario e Impresa Edile Laurentiu.</p>
+
+        <div id="gallery-empty" class="empty">
+          Ancora nessuna foto. Accedi all’area admin per aggiungere i lavori.
+        </div>
+        <div class="gallery" id="gallery-grid"></div>
+      </section>
+
+      <section class="panel" id="collabora">
+        <p class="kicker">Squadra</p>
+        <h1>Diventa collaboratore</h1>
+        <div class="card">
+          <p>
+            Cerchiamo muratori, piastrellisti, imbianchini, cartongessisti, idraulici ed elettricisti
+            per cantieri a Trieste e provincia. Invia i tuoi dati: ti contattiamo se c’è un lavoro.
+          </p>
+          <form id="collab-form">
+            <div class="grid-2">
+              <label>Nome e cognome <input name="nome" required /></label>
+              <label>Mestiere <input name="mestiere" required placeholder="Es. muratore" /></label>
+              <label>Telefono <input name="tel" required /></label>
+              <label>Email <input name="email" type="email" required /></label>
+            </div>
+            <label>Messaggio <textarea name="msg" placeholder="Esperienza, disponibilità, zona..."></textarea></label>
+            <button class="btn" type="submit">Invia richiesta</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="panel" id="contatti">
+        <p class="kicker">Scrivici</p>
+        <h1>Contatti</h1>
+        <div class="grid-2">
+          <article class="card">
+            <h2>Impresa Edile Mario</h2>
+            <address class="addr">
+              Ungureanu Samuel Marius<br />
+              Viale D’Annunzio<br />
+              34139 Trieste (TS)<br />
+              P.IVA IT01416060323<br />
+              <a href="mailto:Ungureanusamuel14@gmail.com">Ungureanusamuel14@gmail.com</a>
+            </address>
+          </article>
+          <article class="card">
+            <h2>Impresa Edile Laurentiu</h2>
+            <address class="addr">
+              Tudor Laurentiu<br />
+              Via Giuseppe Lorenzo Gatteri 29<br />
+              34129 Trieste (TS)<br />
+              P.IVA IT01427890320<br />
+              C.F. TDRLNT82L11Z129T
+            </address>
+          </article>
+        </div>
+        <article class="card" style="margin-top: 18px">
+          <h2>Scrivici un messaggio</h2>
+          <p>Compila il modulo: ti rispondiamo appena possibile.</p>
+          <form id="contact-form">
+            <div class="grid-2">
+              <label>Nome e cognome <input name="nome" required /></label>
+              <label>Telefono <input name="tel" required /></label>
+              <label>Email <input name="email" type="email" required /></label>
+              <label>Oggetto <input name="oggetto" placeholder="Es. preventivo bagno" /></label>
+            </div>
+            <label>Messaggio <textarea name="msg" required placeholder="Descrivi il lavoro..."></textarea></label>
+            <button class="btn" type="submit">Invia messaggio</button>
+          </form>
+        </article>
+      </section>
+
+      <section class="panel admin-panel" id="admin">
+        <p class="kicker">Pannello</p>
+        <h1>Area admin</h1>
+        <p>Modifica i testi del sito, carica foto in galleria e leggi i messaggi.</p>
+        <div class="admin-tabs">
+          <button type="button" class="on" data-admin="testi">Testi del sito</button>
+          <button type="button" data-admin="foto">Galleria</button>
+          <button type="button" data-admin="inbox">Messaggi e collaboratori</button>
+        </div>
+
+        <div class="admin-section on card" id="admin-testi">
+          <h2>Home</h2>
+          <form id="content-form">
+            <label>Etichetta <input name="homeKicker" /></label>
+            <label>Titolo <input name="homeTitle" /></label>
+            <label>Testo <textarea name="homeText"></textarea></label>
+            <div class="grid-3">
+              <label>Card 1 titolo <input name="homeC1t" /></label>
+              <label>Card 2 titolo <input name="homeC2t" /></label>
+              <label>Card 3 titolo <input name="homeC3t" /></label>
+            </div>
+            <label>Card 1 testo <textarea name="homeC1p"></textarea></label>
+            <label>Card 2 testo <textarea name="homeC2p"></textarea></label>
+            <label>Card 3 testo <textarea name="homeC3p"></textarea></label>
+            <button class="btn" type="submit">Salva modifiche</button>
+          </form>
+        </div>
+
+        <div class="admin-section card" id="admin-foto">
+          <h2>Aggiungi una foto</h2>
+          <p>Le foto restano in questo browser, visibili nella Galleria pubblica.</p>
+          <form id="foto-form">
+            <label>Titolo <input id="foto-titolo" placeholder="Es. Bagno — ristrutturazione" /></label>
+            <label>Descrizione <input id="foto-desc" placeholder="Breve nota sul lavoro" /></label>
+            <label>Foto <input id="foto-file" type="file" accept="image/*" required /></label>
+            <button class="btn" type="submit">Carica in galleria</button>
+          </form>
+          <div id="admin-gallery" class="gallery" style="margin-top: 16px"></div>
+        </div>
+
+        <div class="admin-section card" id="admin-inbox">
+          <h2>Messaggi dal form Contatti</h2>
+          <div id="messaggi-list"></div>
+          <h2 style="margin-top: 22px">Richieste collaboratori</h2>
+          <div id="candidature-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-foot">Impresa Edile Mario + Impresa Edile Laurentiu · Trieste</footer>
+
+    <div class="modal" id="login-modal">
+      <div class="modal-card">
+        <h2>Area admin</h2>
+        <p style="color: var(--ink-soft)">Accesso riservato. Dopo il login puoi modificare il sito.</p>
+        <form id="login-form">
+          <label>Utente <input name="user" autocomplete="username" required /></label>
+          <label>Password <input name="pass" type="password" autocomplete="current-password" required /></label>
+          <button class="btn" type="submit">Entra</button>
+          <button class="btn ghost" id="close-login" type="button">Annulla</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox"><img id="lb-img" alt="Foto cantiere" /></div>
+    <div class="toast" id="toast"></div>
+
+    <script src="js/auth.js?v=11"></script>
+    <script src="js/galleria.js?v=11"></script>
+    <script src="js/site.js?v=11"></script>
+    <script>
+      document.querySelectorAll("[data-go]").forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          showPanel(a.dataset.go);
+        });
+      });
+    </script>
+  </body>
+</html>
